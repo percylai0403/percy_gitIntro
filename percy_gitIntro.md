@@ -80,3 +80,38 @@ Git下載網頁： https://git-scm.com/downloads
 忽略檔案
     如果不想要某個不重要的檔案被記錄可以在工作區新增一個 .gitignore 的當按把想被忽略的檔案名或副檔名寫進去
     裡面的檔案就不會被 git 紀錄
+
+# Part 4 GitHub
+Git 與 GitHub 的差異
+    Git：Git 是一個檔案版本管理系統，用來追蹤文件與檔案變更
+    GitHub：GitHub 是一個雲端協作平台，可以讓使用者在雲端開發與協作
+
+GitHub 網站：https://github.com/
+
+# Part 5 連結 VSCode 裡的資料到 GitHub 
+同步資料到 GitHub
+    第一步登入 GitHub 帳號
+    第二步在主頁面左邊建立儲存庫
+    第三步在後續頁面底部可以找到現成的指令把 VSCode 連結到 GitHub
+        1.用來連接本地儲存庫指令：git remote add origin 網址 
+        2.將主線分支取名為 main 指令：git branch -M main
+        3.將本地位於 main 的資料推送到雲端指令：git push -u origin main
+        4.到 GitHub 重整頁面就可以看到推送的資料
+        5.在 Commit 這個頁面也可以看到過往提交的版本變更紀錄
+
+# Part 6 下載與推送資料在 GitHub 與 VSCode ，專案共編
+從 VSCode 推送資料到 GitHub
+    使用指令：git push
+
+在 GitHub 上共編
+    1.打開設定，可以找到 Collaborators
+    2.輸入想邀請共編人的 email
+    3.這樣就可以讓對方共編項目
+
+從 GitHub 下載資料到 VSCode
+    1.在 GitHub 上複製項目網址
+    2.回到 VSCode 輸入指令：git clone 複製的網址
+    3.這樣 VSCode 就會下載 GitHub 上的項目
+    4.要注意下載後的項目是放在工作區的子資料夾
+    5.想要開始編輯要輸入指令來切換工作區：cd 資料庫名
+    6.有了第一次連接後續只要輸入指令 git pull 就可以一直保持同步
