@@ -116,8 +116,9 @@ GitHub 網站：https://github.com/
     5.想要開始編輯要輸入指令來切換工作區：cd 資料庫名  
     6.有了第一次連接後續只要輸入指令 git pull 就可以一直保持同步
 
-# Part 7 分支
+# Part 7 開設分支
 如果想編輯又怕修改到原本的資料，可以開設分支在分支上編輯  
     1.開設分支指令 git checkout -b 分支名  
     2.開設分支一樣可以用之前的指令來紀錄檔案變更  
     3.將分支推送指令：git push origin 分支名
+    4.可以利用 GitHub 上的 pull request 來合併項目
